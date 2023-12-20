@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Montserrat:wght@700&family=Outfit:wght@300;400;500;600;700;800;900&family=Roboto+Flex:opsz,wght@8..144,500&family=Roboto:wght@300;400;500;700;900&family=Work+Sans:wght@300;400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom css sheet -->
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Express | Homepage</title>
+  </head>
+  <body>
+    <%- include ('partials/navbar.ejs') %>
+    <section class="container">
+      <div class="hero--area">
+        <div class="hero--text">
+          <h1>
+            <span>Enjoy a seamless financial transaction</span> with better
+            exchange rates
+          </h1>
+          <h1><button>Register now</button></h1>
+        </div>
+        <div class="hero--image">
+          <img
+            style="margin-top: -24px"
+            src="https://img.freepik.com/free-vector/cash-payment-concept-illustration_114360-3320.jpg?w=740&t=st=1702989993~exp=1702990593~hmac=94787df3f4032cfd887371e4fca06c3f88942c34e0bf744be4ea51ccdafee267"
+            alt="hero image"
+          />
+        </div>
+      </div>
+
+      <div class="assurance-images">
+        <img
+          src="https://img.freepik.com/premium-vector/fast-money-transaction-budget-estimate-time-is-money-concept-stopwatch-icon-financial-services-quick-loan-approval-cash-transfer-online-payment-vector-illustration_106788-3708.jpg"
+          alt=""
+        />
+        <img
+          src="https://img.freepik.com/premium-vector/secure-transaction-concept_23785-162.jpg?w=2000"
+          alt=""
+        />
+        <img
+          src="https://img.freepik.com/premium-vector/bank-approved-business-man-credit-illustration-success-money-loan-people-finance-investment-mortgage-contract-concept_169479-1374.jpg"
+          alt=""
+        />
+      </div>
+    </section>
+  </body>
+</html>

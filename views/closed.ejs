@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Montserrat:wght@700&family=Outfit:wght@300;400;500;600;700;800;900&family=Roboto+Flex:opsz,wght@8..144,500&family=Roboto:wght@300;400;500;700;900&family=Work+Sans:wght@300;400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom css sheet -->
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Express | Homepage</title>
+  </head>
+  <body>
+    <%- include ('partials/navbar.ejs') %>
+    <section class="container">
+      <img
+        style="object-fit: contain; height: 300px"
+        src="https://st5.depositphotos.com/1954927/64867/v/450/depositphotos_648679836-stock-illustration-wooden-closed-hanging-signboard-vintage.jpg"
+        alt="out of business hours"
+      />
+      <h3 style="text-align: center">
+        Our website is only available on Monday to Friday during working hours -
+        9:00am to 5:00pm (17:00pm).
+      </h3>
+    </section>
+  </body>
+</html>
