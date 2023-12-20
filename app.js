@@ -17,7 +17,7 @@ app.set("view engine", "ejs");
 
 app.use(express.static(path.join(__dirname, "./public")));
 
-/* NB: The server time zone used is GMT+00, which may be hour behind
+/* NB: The server time zone uses GMT+00, which may be hour behind
 your local machine time. 
  */
 
