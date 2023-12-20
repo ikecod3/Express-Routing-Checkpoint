@@ -17,10 +17,15 @@ app.set("view engine", "ejs");
 
 app.use(express.static(path.join(__dirname, "./public")));
 
+/* NB: The server time zone used is GMT+00, which may be hour behind
+your local machine time. 
+ */
+
 // custom middleware for verifying working hours
 const workingHoursMiddleware = (req, res, next) => {
   // we  get the current day and time
   const getToday = new Date().getDay();
+  console.log(new Date());
   const getCurrentTime = new Date().getHours();
 
   // check today is not sunday (0) or saturday (6)
