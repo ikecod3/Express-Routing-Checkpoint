@@ -26,7 +26,7 @@ const workingHoursMiddleware = (req, res, next) => {
   // check today is not sunday (0) or saturday (6)
   const isWeekday = getToday !== 0 && getToday !== 6;
   //  check if current time is within business hours
-  const isBusinessHours = getCurrentTime >= 8 && getCurrentTime <= 17;
+  const isBusinessHours = getCurrentTime >= 9 && getCurrentTime <= 17;
   /**
    * Conditional rendering:
    * if today is not weekday and the current time is not business hours,
